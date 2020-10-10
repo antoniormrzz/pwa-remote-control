@@ -7,6 +7,23 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() { }
+
+  async play_pause() {
+    await fetch('/play-pause');
+  }
+
+  async volume_up() {
+    await fetch('/volume-up');
+  }
+  async volume_down() {
+    await fetch('/volume-down');
+  }
+  async rewind() {
+    await fetch('/rewind');
+  }
+  async fast_forward() {
+    await fetch('/fast-forward');
+  }
 
 }
